@@ -28,7 +28,7 @@ const htmlPluginEntries = templateFiles.map((template) => new HTMLWebpackPlugin(
 
 module.exports = {
   entry: {
-    app: path.resolve(environment.paths.source, 'js', 'app.js'),
+    app: path.resolve(environment.paths.source, 'js', 'index.js'),
   },
   output: {
     filename: 'js/[name].js',
@@ -113,8 +113,8 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(environment.paths.source, 'images', 'content'),
-          to: path.resolve(environment.paths.output, 'images', 'content'),
+          from: path.resolve(environment.paths.source, 'images'),
+          to: path.resolve(environment.paths.output, 'images'),
           toType: 'dir',
           globOptions: {
             ignore: ['*.DS_Store', 'Thumbs.db'],

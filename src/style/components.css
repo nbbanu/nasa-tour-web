@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+
+:root {
+    /* #region COLORS  */
+    --background: #1e1e1e;
+    --primary: #047cb3;
+    --primaryDark: #014b6e;
+    --secondary: #e94f37;
+    --success: #6bbc4f;
+    --fail: #e93f3f;
+    --warning: #ffca41;
+    /* #endregion */
+   
+    /* #region FONTS */
+    --cataraman: "Lato", sans-serif;
+    --poppins: "Poppins", sans-serif;
+    /* #endregion */
+  }
+  
+.btn{
+    padding: 10px;
+    font-family: var(--cataraman);
+    font-size: 14px;
+    border-radius: 5px;
+}
