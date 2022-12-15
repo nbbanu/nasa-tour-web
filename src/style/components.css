@@ -4,7 +4,6 @@
 
 :root {
     /* #region COLORS  */
-    --background: #1e1e1e;
     --primary: #047cb3;
     --primaryDark: #014b6e;
     --secondary: #e94f37;
@@ -17,11 +16,12 @@
     --cataraman: "Lato", sans-serif;
     --poppins: "Poppins", sans-serif;
     /* #endregion */
-  }
+}
   
 .btn{
     padding: 10px;
     font-family: var(--cataraman);
     font-size: 14px;
     border-radius: 5px;
+    
 }
