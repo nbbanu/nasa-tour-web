@@ -54,9 +54,6 @@
     "webpack-dev-server": "^4.8.1",
     "webpack-merge": "^5.8.0"
   },
-  "engines": {
-    "node": ">=14"
-  },
   "keywords": [
     "webpack",
     "boilerplate",
