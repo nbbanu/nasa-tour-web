@@ -4,20 +4,14 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: var(--cataraman);
-
 }
 * {
   box-sizing: border-box;
-}
-
-.background{
-  background:url('../images/navbarbg.png') center center no-repeat;
-  height:500px;
+  font-family: var(--cataraman);
 }
 
 .container {
-  width: 1200px;
+  width: 1250px;
   margin: 0 auto;
 }
 nav {
@@ -41,7 +35,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #444;
+  color: var(--fonts);
 }
 .nav-bar-info li:nth-child(1) img, .nav-bar-info li:nth-child(2) img{
   margin-right: 7px;
@@ -54,12 +48,186 @@ nav ul li a {
   align-items: center;
   justify-content: center;
 }
+.header-banner{
+  background:url('../images/navbarbg.png') center center no-repeat;
+  height:500px;
+}
+.search-section {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-section h1{
+  color: #fff;
+  text-align: center;
+  margin-bottom: 55px;
+  margin-top: 150px;
+  font-size: 56px;
+  font-weight: 900;
+}
+#search-form{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 536px;
+}
+#search-form .search-icon img{
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  color: var(--secondary);
+  width: 18.42px;
+  height: 18.42px;
 
-.background img {
-  height: 500px;
-  background-repeat: no-repeat;
+}
+#search-form input{
+  border: 0;
+  border-radius: 30px;
+  width: 100%;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.07);
+  font-size: 18px;
+  color: #666;
+  padding: 16px 55px;
+}
+#search-form button{
+  background-color: var(--secondary);
+  border: 0;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 10px 23px;
+  color: #fff;
+  position: absolute;
+  top: 6px;
+  right: 8px;
 }
 
-#section-form{
+.top-activities-cards{
+  display: flex;
+  margin-bottom: 80px;
+}
+#top-activities h2{
+  margin-top: 112px;
+  margin-bottom: 60px;
+  margin-left: 42px;
+  color: var(--fonts);
+  font-size: 42px;
+  font-weight: 700;
+}
+.top-activities-card{
+  width: 330px;
+  height: 356px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.14);
+  margin-right: 30px;
+}
+.top-activities-card:last-child {
+  margin-right: 0;
+}
+.top-activities-card .top-activities-img {
   position: relative;
+}
+.top-activities-card .top-activities-img img{
+  /* object-fit: cover; */
+  width: 100%;
+}
+.top-activities-card .top-activities-img .top-activities-btn{
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  background-color: var(--primaryDark);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 900;
+  font-family: var(--cataraman);
+}
+
+.top-activities-card .top-activities-img .top-activities-prices {
+  position: relative;
+  font-family: var(--poppins);
+  font-weight: 700;
+  color: #fff;
+}
+.top-activities-card .top-activities-img .top-activities-prices .small{
+  position: absolute;
+  right: 20px;
+  bottom: 44px;
+  font-size: 20px;
+  text-decoration: line-through;
+}
+.top-activities-card .top-activities-img .top-activities-prices .big{
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-size: 32px;
+}
+
+.top-activities-subinfo{
+  display: flex;
+  align-items: center;
+}
+.top-activities-card h4{
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 0;
+  color: var(--fonts);
+}
+.top-activities-subinfo .hours, .location{
+  display: flex;
+  align-items: center;
+  margin-left: 22px;
+  font-size: 14px;
+  color: var(--fonts);
+}
+
+.top-activities-subinfo .hours img, .location img{
+  margin-right: 10px;
+}
+#support{
+  margin-bottom: 90px;
+}
+.support-banner {
+  background: url(../images/Rectangle\ 87.png) center center no-repeat;
+  background-size: cover;
+  height: 300px;
+  
+}
+.support-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.support-card{
+  width: 450px;
+  height: 134px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(#014B6E, 0.6); 
+  border: 0;
+  border-radius: 10px;
+  margin-top: 80px;
+  margin-left: 15px;
+}
+.support-card .support-info{
+  color: #fff;
+  
+}
+.support-card .support-info h3{
+  font-size: 22px;
+  font-weight: 900;
+  margin: 0;
+}
+.support-card .support-info p{
+  font-family: var(--poppins);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+.support-card img{
+  width: 70px;
+  height: 70px;
+  margin-right: 18px;
+  margin-left: 36px;
 }

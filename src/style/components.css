@@ -10,18 +10,18 @@
     --success: #6bbc4f;
     --fail: #e93f3f;
     --warning: #ffca41;
+    --fonts: #444444;
     /* #endregion */
    
     /* #region FONTS */
-    --cataraman: "Lato", sans-serif;
+    --cataraman: 'Catamaran', sans-serif;
     --poppins: "Poppins", sans-serif;
     /* #endregion */
 }
   
 .btn{
-    padding: 10px;
-    font-family: var(--cataraman);
+    padding: 10px 10px;
     font-size: 14px;
     border-radius: 5px;
-    
+    border: 0;
 }
