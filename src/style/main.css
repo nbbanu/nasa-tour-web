@@ -4,22 +4,33 @@ html,
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
+
 * {
   box-sizing: border-box;
   font-family: var(--cataraman);
 }
 
 .container {
-  width: 1400px;
+  max-width: 1410px;
   margin: 0 auto;
 }
+
 nav {
   height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.nasa-tour-logo{
+  width: 179px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 nav ul {
   display: flex;
   justify-content: center;
@@ -28,6 +39,7 @@ nav ul {
   font-weight: 700;
   font-size: 16px;
 }
+
 nav ul li {
   margin-left: 20px;
   cursor: pointer;
@@ -37,29 +49,45 @@ nav ul li a {
   text-decoration: none;
   color: var(--fonts);
 }
-.nav-bar-info li:nth-child(1) img, .nav-bar-info li:nth-child(2) img{
+
+.nav-bar-info img {
+  width: 22px;
+  height: 22px;
+}
+.nav-bar-info img:last-child {
+display: none;
+}
+
+.nav-bar-info li:nth-child(1) img,
+.nav-bar-info li:nth-child(2) img {
   margin-right: 7px;
 }
-.nav-bar-info li:nth-child(3) img, .nav-bar-info li:nth-child(4) img{
+
+.nav-bar-info li:nth-child(3) img,
+.nav-bar-info li:nth-child(4) img {
   margin-left: 5px;
 }
-.nav-bar-info ul li a{
+
+.nav-bar-info ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.header-banner{
-  background:url('../images/navbarbg.png') center center no-repeat;
+
+.header-banner {
+  background: url('../images/navbarbg.png') center center no-repeat;
   width: 100%;
-  height:500px;
+  height: 500px;
 }
+
 .search-section {
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.search-section h1{
+
+.search-section h1 {
   color: #fff;
   text-align: center;
   margin-bottom: 55px;
@@ -67,13 +95,15 @@ nav ul li a {
   font-size: 56px;
   font-weight: 900;
 }
-#search-form{
+
+#search-form {
   position: relative;
   display: flex;
   justify-content: center;
   width: 536px;
 }
-#search-form .search-icon img{
+
+#search-form .search-icon img {
   position: absolute;
   top: 12px;
   left: 15px;
@@ -82,7 +112,8 @@ nav ul li a {
   height: 18.42px;
 
 }
-#search-form input{
+
+#search-form input {
   border: 0;
   border-radius: 30px;
   width: 100%;
@@ -91,7 +122,8 @@ nav ul li a {
   color: #666;
   padding: 16px 55px;
 }
-#search-form button{
+
+#search-form button {
   background-color: var(--secondary);
   border: 0;
   border-radius: 30px;
@@ -104,80 +136,96 @@ nav ul li a {
 }
 
 /* top-activities */
-
-.top-activities-cards{
-  display: flex;
-  margin-bottom: 80px;
-}
-#top-activities h2{
+#top-activities  h2 {
   margin-top: 112px;
   margin-bottom: 60px;
-  margin-left: 42px;
   color: var(--fonts);
   font-size: 42px;
   font-weight: 700;
 }
-.top-activities-card{
-  width: 330px;
+
+.top-activities-cards {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.top-activities-card {
+  width: 25%;
   height: 356px;
-  border-radius: 20px;
   background-color: #fff;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.14);
-  margin-right: 30px;
+  margin-right: 20px;
+  border-radius: 20px;
 }
+
 .top-activities-card:last-child {
   margin-right: 0;
 }
-.top-activities-card .top-activities-img {
-  position: relative;
+
+.top-activities-card .top-activities-info {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
-.top-activities-card .top-activities-img img{
-  /* object-fit: cover; */
-  width: 100%;
-}
-.top-activities-card .top-activities-img .top-activities-btn{
+
+.top-act-comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   position: absolute;
-  bottom: 15px;
-  left: 20px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.top-activities-card .top-activities-btn {
   background-color: var(--primaryDark);
   color: #fff;
   font-size: 14px;
   font-weight: 900;
   font-family: var(--cataraman);
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
-.top-activities-card .top-activities-img .top-activities-prices {
-  position: relative;
+.top-activities-card .top-activities-prices {
   font-family: var(--poppins);
   font-weight: 700;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
-.top-activities-card .top-activities-img .top-activities-prices .small{
-  position: absolute;
-  right: 20px;
-  bottom: 44px;
+
+.top-activities-card .top-activities-prices .small {
   font-size: 20px;
   text-decoration: line-through;
 }
-.top-activities-card .top-activities-img .top-activities-prices .big{
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
+
+.top-activities-card .top-activities-prices .big {
   font-size: 32px;
 }
 
-.top-activities-subinfo{
+.top-activities-subinfo {
   display: flex;
   align-items: center;
 }
-.top-activities-card h4{
+
+.top-activities-card h4 {
   font-size: 20px;
   margin-top: 20px;
   margin-left: 20px;
   margin-bottom: 0;
   color: var(--fonts);
 }
-.top-activities-subinfo .hours, .location{
+
+.top-activities-subinfo .hours,
+.location {
   display: flex;
   align-items: center;
   margin-left: 22px;
@@ -185,49 +233,57 @@ nav ul li a {
   color: var(--fonts);
 }
 
-.top-activities-subinfo .hours img, .location img{
+.top-activities-subinfo .hours img,
+.location img {
   margin-right: 10px;
 }
-#support{
+ /* Support */
+#support {
   margin-bottom: 90px;
 }
+
 .support-banner {
   background: url(../images/supportBg.png) center center no-repeat;
   background-size: cover;
   height: 300px;
-  
+
 }
+
 .support-cards {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
-.support-card{
-  width: 450px;
+
+.support-card {
+  width: 33.3%;
   height: 134px;
   display: flex;
   align-items: center;
-  background-color: rgba(#014B6E, 0.6); 
+  background-color: rgba(#014B6E, 0.6);
   border: 0;
   border-radius: 10px;
   margin-top: 80px;
-  margin-left: 15px;
 }
-.support-card .support-info{
+
+.support-card .support-info {
   color: #fff;
 }
-.support-card .support-info h3{
+
+.support-card .support-info h3 {
   font-size: 22px;
   font-weight: 900;
   margin: 0;
 }
-.support-card .support-info p{
+
+.support-card .support-info p {
   font-family: var(--poppins);
   font-size: 14px;
   font-weight: 500;
   margin: 0;
 }
-.support-card img{
+
+.support-card img {
   width: 70px;
   height: 70px;
   margin-right: 18px;
@@ -235,64 +291,90 @@ nav ul li a {
 }
 
 /* tours */
-.tours{
+#tours {
   margin-bottom: 86px;
 }
-.tours h2{
+
+.tours h2 {
   font-size: 42px;
   font-weight: 700;
   color: var(--fonts);
   margin-bottom: 60px;
 }
-.tours .local-tours{
+
+.tours .local-tours {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 65px;
 }
+
 .tours .local-tour {
-  margin-right: 13px;
-  position: relative;
-}
-.tours .local-tours .local-tour:last-child{
-  margin-right: 0;
-}
-.tours .local-tours img{
   width: 258px;
   height: 338px;
+  margin-right: 30px;
 }
-.tours .local-tour p{
+
+.tours .local-tours .local-tour:last-child {
+  margin-right: 0;
+}
+
+
+.tours .local-tour p {
   color: #fff;
-  position: absolute;  
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   font-size: 22px;
   font-family: var(--poppins);
   font-weight: 700;
+  align-items: center;
+  justify-content: center;
 }
-.tours .tours-benefits{
+
+.tours .tours-benefits {
   display: flex;
   align-items: center;
   margin-bottom: 60px;
 }
-.tours .tour-benefit{
+
+.tours .tour-benefit {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* margin-right: 80px; */
 }
-.tour-benefit .benefit-info{
+
+.tours .tour-benefit .search-icon {
+  background-color: #fff;
+  width: 85px;
+  height: 85px;
+  padding: 10px 25px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.07);
+  position: relative;
+}
+
+.tours .tour-benefit .search-icon i {
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: var(--secondary);
+  width: 100%;
+  height: 100%;
+}
+
+.tour-benefit .benefit-info {
   margin-left: 19px;
 }
-.tour-benefit h4{
+
+.tour-benefit h4 {
   color: var(--primaryDark);
   font-size: 22px;
   font-weight: 900;
   margin: 0;
   margin-bottom: 6px;
 }
-.tour-benefit p{
+
+.tour-benefit p {
   color: var(--primaryDark);
   font-family: var(--poppins);
   font-size: 14px;
@@ -300,47 +382,426 @@ nav ul li a {
   margin: 0;
 }
 
-.near-tour-cards{
+.near-tour-cards {
   display: flex;
   align-items: center;
 }
-.near-tours h2{
+
+.near-tour {
+  width: 25%;
+  height: 350px;
+
+}
+.near-tour:not(:last-child) {
+  margin-right: 30px;
+}
+.near-tour-card-content {
+  background: linear-gradient(transparent 0%, #014B6EDB 86%);
+  padding: 30px;
+}
+.near-tours h2 {
   color: var(--fonts);
   margin-bottom: 60px;
   font-size: 42px;
   font-weight: 700;
 }
-/* 330 362  */
-.near-tour-cards .near-tour{
-  position: relative;
-  
-}
-.near-tour-cards .near-tour img{
-  width: 330px;
-  height: 362px;
-  margin-right: 30px;
-  /* background: linear-gradient(#fff 0%,#014B6EDB 86%); */
-  
-}
-.near-tour-cards .near-tour img:last-child{
+.near-tour-cards .near-tour img:last-child {
   margin-right: 0;
 }
-.near-tour-cards .near-tour p{
-  position: absolute;
-  bottom: 105px;
-  left: 45px;
+.near-tour-cards .near-tour p {
   font-family: var(--poppins);
   font-size: 22px;
   font-weight: 700;
   color: #fff;
   margin: 0;
 }
-.near-tour-cards .near-tour button{
-  position: absolute;
-  bottom: 54px;
-  left: 45px;
+.near-tour-cards .near-tour button {
   z-index: 1;
   color: var(--primaryDark);
   font-weight: 900;
   background: #fff;
+}
+
+/* Most Popular Tours */
+#most-popular-tours {
+  background: url(../images/mostPopularToursBG.png) no-repeat;
+  width: 100%;
+  background-size: 100% 972px;
+  margin-bottom: 90px;
+}
+
+.most-popular-tours h2 {
+  color: #fff;
+  font-size: 46px;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 93px;
+  margin-bottom: 66px;
+}
+
+.most-popular-tours-cards {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.most-popular-tours-card {
+  width: 341px;
+  height: 409px;
+  flex-shrink: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.14);
+  margin-right: 30px;
+  border-radius: 20px;
+}
+
+.most-popular-tours-card:last-child {
+  margin-right: 0;
+}
+
+.most-popular-tours-card .most-popular-tours-info {
+  padding: 20px;
+  height: 268px;
+  position: relative;
+}
+
+.most-popular-tours-card .most-popular-tours-info img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.most-popular-tours-comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  padding: 15px;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.most-popular-tours-card .popular-tours-btn {
+  background-color: #fff;
+  color: var(--primaryDark);
+  font-size: 14px;
+  font-weight: 900;
+  font-family: var(--cataraman);
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.most-popular-tours-card .popular-tours-prices {
+  font-family: var(--poppins);
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.most-popular-tours-card .popular-tours-prices .small {
+  font-size: 20px;
+  text-decoration: line-through;
+}
+
+.most-popular-tours-card .popular-tours-prices .big {
+  font-size: 32px;
+}
+
+.popular-tours-subinfo {
+  display: flex;
+  align-items: center;
+}
+
+.most-popular-tours-card h4 {
+  font-size: 20px;
+  margin: 0;
+  padding-left: 20px;
+  color: var(--fonts);
+}
+
+.popular-tours-subinfo .hours,
+.location {
+  display: flex;
+  align-items: center;
+  margin-left: 22px;
+  font-size: 14px;
+  color: var(--fonts);
+}
+
+.popular-tours-subinfo .hours img,
+.location img {
+  margin-right: 10px;
+}
+
+#most-popular-tours .watch-video {
+  width: 60%;
+  height: 552px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.watch-video-info {
+  align-items: center;
+}
+
+.watch-video h4 {
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--secondary);
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.watch-video p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+  padding-bottom: 35px;
+}
+
+/* Recent Blog&Artists */
+#blogAndArtist {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+#blogAndArtist h2 {
+  color: var(--fonts);
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.blog-artist-cards {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.blog-artist-card {
+  width: 25%;
+  height: 240px;
+}
+
+.blog-artist-card {
+  margin-right: 20px;
+}
+
+.blog-artist-card:nth-child(4) {
+  margin-right: 0;
+}
+
+.blog-artist-card-info {
+  background: linear-gradient(transparent 0%, #014B6EDB 90%);
+}
+
+.blog-artist-card p {
+  color: #fff;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+
+/* .carousel-btn {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#blogAndArtist .carousel-right {
+  right:0
+}
+#blogAndArtist .carousel-left {
+  left:0
+} */
+
+
+
+#top-attraction-cat {
+  margin-top: 110px;
+  background: #F7F7F7;
+  background-size: 100% 313px;
+  padding-bottom: 65px;
+  padding-top: 50px;
+  margin-bottom: 80px;
+}
+
+/* Attraction Categories */
+#top-attraction-cat h2 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--fonts);
+
+}
+
+.regions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.attraction-region {
+  box-shadow: 0 4px 5px 0px rgba(0, 0, 0, 0.07);
+  background: white;
+  height: 40px;
+  display: inline-flex;
+  margin-right: 10px;
+  margin-bottom: 27px;
+  font-size: 16px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.attraction-btn-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  color: white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: var(--primaryDark);
+}
+
+.attraction-region .attraction-btn-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 19px;
+  height: 100%;
+  color: var(--fonts);
+
+}
+
+/* Collabrations */
+#collaborations {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+
+.collabration {
+  width: 30%;
+  height: 85px;
+  border-radius: 10px;
+  padding: 14px 40px;
+  margin-right: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.07);
+}
+
+.collabration:last-child {
+  margin-right: 0;
+}
+
+.collabration img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Footer  */
+#footer {
+  background: url(../images/mostPopularToursBG.png) center center no-repeat;
+  background-size: 100% 380px;
+  background: linear-gradient(180deg, #096996 0%, #06415C 100%);
+  margin-bottom: 41px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nasa-tour-footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nasa-tour-footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 33.3%;
+}
+
+.nasa-tour-footer-left .nasa-tour-footer-comment p {
+  color: #fff;
+  font-family: var(--poppins);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.nasa-tour-footer-left .nasa-tour-footer-success .success-images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 107px;
+  width: 150px;
+}
+
+.nasa-tour-footer-left .success-images img {
+  margin-right: 22px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.nasa-tour-footer-right {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.nasa-tour-footer-right .footer-about-nasa-tour {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.nasa-tour-footer-right h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.nasa-tour-footer-right .footer-about-support {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nasa-tour-footer-bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nasa-tour-footer-bottom .support-social-media {
+  display: flex;
+  align-items: center;
+}
+
+.nasa-tour-footer-bottom .support-social-media i{
+  font-size: 20px;
+  color: #fff;
+  margin-right: 5px;
 }

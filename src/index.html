@@ -5,16 +5,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
   <title>Document</title>
 </head>
 
 <body>
   <header>
+
     <nav class="container" id="nav-bar">
-      <div class="nasa-tour-logo"><a href="#"><img src="images/nasa-tour-logo.png" alt="nasa-tour-logo"></a></div>
+      <div class="nasa-tour-logo"><a href="#"><img src="images/nasa-tour-logo.png" alt="nasa-tour-logo" class="content-img"></a></div>
       <div class="nav-bar-list">
         <ul>
           <li><a href="#">Home Page</a></li>
@@ -27,10 +27,11 @@
       </div>
       <div class="nav-bar-info">
         <ul>
-          <li><a href="#"><img src="images/logos_whatsapp-icon.png" alt="wp-logo">+90 506 307 8794</a></li>
+          <li><a href="#"><img src="images/logos_whatsapp-icon.png" alt="wp-logo"><span>+90 506 307 8794</span> </a></li>
           <li><a href="#"><img src="images/login-lock.png" alt="login-lock">Login</a></li>
           <li><a href="#">English <img src="images/eva_arrow-ios-forward-outline.png" alt="arrow"></a></li>
           <li><a href="#">USD <img src="images/eva_arrow-ios-forward-outline.png" alt="arrow"></a></li>
+          <div class="menu"><a href="#"> <img src="images/menu.png"  alt="arrow"></a></div>
         </ul>
       </div>
     </nav>
@@ -46,207 +47,291 @@
 
     </div>
   </header>
-
-  <section id="top-activities" class="container">
+<div class="container">
+  <section id="top-activities" >
     <h2>Top Activities we think you would enjoy</h2>
     <div class="top-activities-cards">
-      <div class="top-activities-card">
-        <div class="top-activities-img">
-          <img src="images/top-activities.png" alt="top-activities">
-          <button class="top-activities-btn btn">ADVENTURE</button>
-          <div class="top-activities-prices">
-            <span class="small">24$</span>
-            <span class="big">20$</span>
+      <div class="top-activities-card" id="repeat_4">
+        <div class="top-activities-info content-parent">
+          <img src="https://blog.obilet.com/wp-content/uploads/2018/10/denizli-pamukkale.jpg" class="content-img"
+            alt="top-activities">
+          <div class="top-act-comment">
+            <button class="top-activities-btn btn">ADVENTURE</button>
+            <div class="top-activities-prices">
+              <span class="small">24$</span>
+              <span class="big">20$</span>
+            </div>
           </div>
         </div>
-          <h4>Horse Riding at Golden Sandy Beach</h4>
-          <div class="top-activities-subinfo">
-            <div class="hours">
-              <img src="images/time-outline.png" alt="time-outline">
-              <p>1-2 Hours</p>
-            </div>
-            <div class="location">
-              <img src="images/konum.png" alt="location">
-              <p>Antalya</p>
-            </div>
+        <h4>Horse Riding at Golden Sandy Beach</h4>
+        <div class="top-activities-subinfo">
+          <div class="hours">
+            <img src="images/time-outline.png" alt="time-outline">
+            <p>1-2 Hours</p>
           </div>
+          <div class="location">
+            <img src="images/konum.png" alt="location">
+            <p>Antalya</p>
+          </div>
+        </div>
       </div>
-      <div class="top-activities-card">
-        <div class="top-activities-img">
-          <img src="images/top-activities.png" alt="top-activities">
-          <button class="top-activities-btn btn">ADVENTURE</button>
-          <div class="top-activities-prices">
-            <span class="small">24$</span>
-            <span class="big">20$</span>
+
+      <!-- <a href="#" class="carousel-btn carousel-left"><img src="images/Component 92.png" alt="solOk"></a>
+        <a href="#" class="carousel-btn carousel-right"><img src="images/Component 93.png" alt="sağOk"></a> -->
+    </div>
+  </section>
+</div>
+
+
+  <section id="support">
+    <div class="support-banner">
+      <div class="support-cards container">
+        <div class="support-card" id="repeat_3">
+          <img src="images/smileface.png" alt="smile-face">
+          <div class="support-info">
+            <h3>25.000+ Happy Customers</h3>
+            <p>Our satisfied customers are our best reference.</p>
           </div>
         </div>
-          <h4>Horse Riding at Golden Sandy Beach</h4>
-          <div class="top-activities-subinfo">
-            <div class="hours">
-              <img src="images/time-outline.png" alt="time-outline">
-              <p>1-2 Hours</p>
-            </div>
-            <div class="location">
-              <img src="images/konum.png" alt="location">
-              <p>Antalya</p>
-            </div>
-          </div>
-      </div>
-      <div class="top-activities-card">
-        <div class="top-activities-img">
-          <img src="images/top-activities.png" alt="top-activities">
-          <button class="top-activities-btn btn">ADVENTURE</button>
-          <div class="top-activities-prices">
-            <span class="small">24$</span>
-            <span class="big">20$</span>
-          </div>
-        </div>
-          <h4>Horse Riding at Golden Sandy Beach</h4>
-          <div class="top-activities-subinfo">
-            <div class="hours">
-              <img src="images/time-outline.png" alt="time-outline">
-              <p>1-2 Hours</p>
-            </div>
-            <div class="location">
-              <img src="images/konum.png" alt="location">
-              <p>Antalya</p>
-            </div>
-          </div>
-      </div>
-      <div class="top-activities-card">
-        <div class="top-activities-img">
-          <img src="images/top-activities.png" alt="top-activities">
-          <button class="top-activities-btn btn">ADVENTURE</button>
-          <div class="top-activities-prices">
-            <span class="small">24$</span>
-            <span class="big">20$</span>
-          </div>
-        </div>
-          <h4>Horse Riding at Golden Sandy Beach</h4>
-          <div class="top-activities-subinfo">
-            <div class="hours">
-              <img src="images/time-outline.png" alt="time-outline">
-              <p>1-2 Hours</p>
-            </div>
-            <div class="location">
-              <img src="images/konum.png" alt="location">
-              <p>Antalya</p>
-            </div>
-          </div>
       </div>
     </div>
   </section>
 
-<section id="support">
-  <div class="support-banner">
-    <div class="support-cards container">
-    <div class="support-card">
-      <img src="images/smileface.png" alt="smile-face">
-      <div class="support-info">
-        <h3>25.000+ Happy Customers</h3>
-        <p>Our satisfied customers are our best reference.</p>
-      </div>
-    </div>
-    <div class="support-card">
-      <img src="images/smileface.png"  alt="smile-face">
-      <div class="support-info">
-        <h3>25.000+ Happy Customers</h3>
-        <p>Our satisfied customers are our best reference.</p>
-      </div>
-    </div>
-    <div class="support-card">
-      <img src="images/smileface.png" alt="smile-face">
-      <div class="support-info">
-        <h3>25.000+ Happy Customers</h3>
-        <p>Our satisfied customers are our best reference.</p>
-      </div>
-    </div>
-  </div>
-  </div>
-</section>
+  <section id="tours">
+    <div class="tours container">
+      <h2>Get beneath the surface of these destinations
+      </h2>
+      <div class="local-tours">
+        <div class="local-tour content-parent" id="repeat_5">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Sunrise_apollo_side.jpg/800px-Sunrise_apollo_side.jpg"
+            class="content-img" alt="side">
+          <div class="local-tour-info ">
+            <p class="content">SİDE</p>
+          </div>
 
-<section id="tours">
-  <div class="tours container">
-    <h2>Get beneath the surface of these destinations
-    </h2>
-    <div class="local-tours ">
-      <div class="local-tour">
-        <img src="images/tours-side.png" alt="side">
-        <p>SİDE</p>
-      </div>
-      <div class="local-tour">
-        <img src="images/tours-side.png" alt="side">
-        <p>SİDE</p>
-      </div>
-      <div class="local-tour">
-        <img src="images/tours-side.png" alt="side">
-        <p>SİDE</p>
-      </div>
-      <div class="local-tour">
-        <img src="images/tours-side.png" alt="side">
-        <p>SİDE</p>
-      </div>
-      <div class="local-tour">
-        <img src="images/tours-side.png" alt="side">
-        <p>SİDE</p>
-      </div>
-    </div>
-    <div class="tours-benefits">
-      <div class="tour-benefit">
-        <img src="images/benefit-search.png" alt="searchIcon">
-        <div class="benefit-info">
-          <h4>Find authentic experiences</h4>
-          <p>Follow your curiosity, feel the joy of real discoveries, and explore more of the world.</p>
         </div>
       </div>
-      <div class="tour-benefit">
-        <img src="images/benefit-search.png" alt="searchIcon">
-        <div class="benefit-info">
-          <h4>Find authentic experiences</h4>
-          <p>Follow your curiosity, feel the joy of real discoveries, and explore more of the world.</p>
+      <div class="tours-benefits">
+        <div class="tour-benefit" id="repeat_3" >
+          <div class="search-icon">
+            <i class="fa fa-search"></i>
+          </div>
+          <div class="benefit-info">
+            <h4>Find authentic experiences</h4>
+            <p>Follow your curiosity, feel the joy of real discoveries, and explore more of the world.</p>
+          </div>
         </div>
+        
+       
       </div>
-      <div class="tour-benefit">
-        <img src="images/benefit-search.png" alt="searchIcon">
-        <div class="benefit-info">
-          <h4>Find authentic experiences</h4>
-          <p>Follow your curiosity, feel the joy of real discoveries, and explore more of the world.</p>
+      <div class="near-tours">
+        <h2>Unmissable sights near you</h2>
+        <div class="near-tour-cards">
+          <div class="near-tour content-parent" id="repeats_4">
+            <img src="https://blog.obilet.com/wp-content/uploads/2018/10/denizli-pamukkale.jpg" class="content-img"
+              alt="pamukkale">
+            <div class="near-tour-card-content content">
+              <p>PAMUKKALE</p>
+              <button class="btn near-activities-btn">24 ACTIVITIES</button>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="near-tours">
-      <h2>Unmissable sights near you</h2>
-      <div class="near-tour-cards">
-        <div class="near-tour">
-          <img src="images/pamukkale.png" alt="pamukkale">
-          <p>PAMUKKALE</p>
-          <button class="btn near-activities-btn">24 ACTİVİTİES</button>
-        </div>
-        <div class="near-tour">
-          <img src="images/pamukkale.png" alt="pamukkale">
-          <p>PAMUKKALE</p>
-          <button class="btn near-activities-btn">24 ACTİVİTİES</button>
-        </div>
-        <div class="near-tour">
-          <img src="images/pamukkale.png" alt="pamukkale">
-          <p>PAMUKKALE</p>
-          <button class="btn near-activities-btn">24 ACTİVİTİES</button>
-        </div>
-        <div class="near-tour">
-          <img src="images/pamukkale.png" alt="pamukkale">
-          <p>PAMUKKALE</p>
-          <button class="btn near-activities-btn">24 ACTİVİTİES</button>
-        </div>
-      </div>
-      
+  </section>
 
+  <section id="most-popular-tours">
+    <div class="most-popular-tours">
+      <h2>Most Popular Tours</h2>
+      <div class="most-popular-tours-cards">
+        <div class="most-popular-tours-card" id="repeat_6">
+          <div class="most-popular-tours-info">
+
+            <img src="https://blog.obilet.com/wp-content/uploads/2018/10/denizli-pamukkale.jpg" alt="top-activities">
+
+            <div class="most-popular-tours-comment">
+              <button class="popular-tours-btn btn">ADVENTURE</button>
+              <div class="popular-tours-prices">
+                <span class="small">24$</span>
+                <span class="big">20$</span>
+              </div>
+            </div>
+          </div>
+          <h4>Horse Riding at Golden Sandy Beach</h4>
+          <div class="popular-tours-subinfo">
+            <div class="hours">
+              <img src="images/time-outline.png" alt="time-outline">
+              <p>1-2 Hours</p>
+            </div>
+            <div class="location">
+              <img src="images/konum.png" alt="location">
+              <p>Antalya</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="watch-video container content-parent">
+        <img src="images/watch video.png" class="content-img" alt="watch-video">
+        <div class="watch-video-info content">
+          <h4>Watch Video</h4>
+          <p>We have 25+ years experience with tours & travels </p>
+        </div>
+
+      </div>
     </div>
+  </section>
+
+  <div class="container">
+    <section id="blogAndArtist">
+      <h2>Recent Blog & Articles
+      </h2>
+      <div class="blog-artist-cards">
+        <div id="" class="blog-artist-card content-parent">
+          <img src="https://blog.obilet.com/wp-content/uploads/2018/10/denizli-pamukkale.jpg" class="content-img"
+            alt="pamukkale">
+          <div class="blog-artist-card-info content ">
+            <p class="content">Antalya’s Spring Blooms: 10 Best Destinations for Flowers</p>
+          </div>
+        </div>
+        <div id="" class="blog-artist-card content-parent">
+          <img src="https://blog.obilet.com/wp-content/uploads/2018/10/denizli-pamukkale.jpg" class="content-img"
+            alt="pamukkale">
+          <div class="blog-artist-card-info content ">
+            <p class="content">Antalya’s Spring Blooms: 10 Best Destinations for Flowers</p>
+          </div>
+        </div>
+        <div id="" class="blog-artist-card content-parent">
+          <img src="https://blog.obilet.com/wp-content/uploads/2018/10/denizli-pamukkale.jpg" class="content-img"
+            alt="pamukkale">
+          <div class="blog-artist-card-info content ">
+            <p class="content">Antalya’s Spring Blooms: 10 Best Destinations for Flowers</p>
+          </div>
+        </div>
+        <div id="" class="blog-artist-card content-parent">
+          <img src="https://blog.obilet.com/wp-content/uploads/2018/10/denizli-pamukkale.jpg" class="content-img"
+            alt="pamukkale">
+          <div class="blog-artist-card-info content ">
+            <p class="content">Antalya’s Spring Blooms: 10 Best Destinations for Flowers</p>
+          </div>
+        </div>
+        <a href="#" class="carousel-btn carousel-left"><img src="images/Component 92.png" alt="solOk"></a>
+        <a href="#" class="carousel-btn carousel-right"><img src="images/Component 93.png" alt="sağOk"></a>
+      </div>
+
+
   </div>
-</section>
+  </section>
+  </div>
 
-<section id="most-popular-tours">
-  
-</section>
+
+  <section id="top-attraction-cat">
+    <h2>Top attraction categories</h2>
+
+    <div class="regions container">
+      <div id="repeat_28" class="attraction-region repeat rep-28">
+        <div class="attraction-btn-1">41</div>
+        <div class="attraction-btn-2">Gazipaşa</div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section id="collaborations" class="container">
+    <div id="repeat_6" class="collabration">
+      <img
+        src="https://cdnuploads.aa.com.tr/uploads/Contents/2018/10/25/thumbs_b_c_c57ba8df8b77eaf4133f5684b2327c06.jpg?v=121059"
+        alt="">
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="nasa-tour-footer-top">
+        <div class="nasa-tour-footer-left">
+          <div class="footer-logo">
+            <img src="images/nasatourlogo.png" class="content-img" alt="nasaturLogo">
+          </div>
+          <div class="nasa-tour-footer-comment">
+            <p>One of the biggest travel companies that organizes tours to almost all holiday resorts in Turkey!
+              Especially in Alanya, Antalya, Belek, Side and many other cities.</p>
+          </div>
+          <div class="nasa-tour-footer-success">
+            <div class="success-images">
+              <img src="images/success1.png" alt="success1">
+              <img src="images/success2.png" alt="success2">
+            </div>
+          </div>
+        </div>
+        <div class="nasa-tour-footer-right">
+          <div class="footer-right-section">
+            <h3>About Nasa Tour</h3>
+            <ul class="li-style ">
+              <li><a href="#" class="a-style">Home Page</a></li>
+              <li><a href="#" class="a-style">Regions</a></li>
+              <li><a href="#" class="a-style">Daily Tours </a></li>
+              <li><a href="#" class="a-style">Tours</a></li>
+              <li><a href="#" class="a-style">Blog</a></li>
+              <li><a href="#" class="a-style">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-right-section">
+            <h3>Regions</h3>
+            <ul class="li-style ">
+              <li><a href="#" class="a-style">Home Page</a></li>
+              <li><a href="#" class="a-style">Regions</a></li>
+              <li><a href="#" class="a-style">Daily Tours </a></li>
+              <li><a href="#" class="a-style">Tours</a></li>
+              <li><a href="#" class="a-style">Blog</a></li>
+              <li><a href="#" class="a-style">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-right-section">
+            <h3>Activities</h3>
+            <ul class="li-style ">
+              <li><a href="#" class="a-style">Home Page</a></li>
+              <li><a href="#" class="a-style">Regions</a></li>
+              <li><a href="#" class="a-style">Daily Tours </a></li>
+              <li><a href="#" class="a-style">Tours</a></li>
+              <li><a href="#" class="a-style">Blog</a></li>
+              <li><a href="#" class="a-style">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-right-section">
+            <h3>Support</h3>
+            <ul class="li-style ">
+              <li><a href="#" class="a-style">Home Page</a></li>
+              <li><a href="#" class="a-style">Regions</a></li>
+              <li><a href="#" class="a-style">Daily Tours </a></li>
+              <li><a href="#" class="a-style">Tours</a></li>
+              <li>
+                <div class="nasa-tour-footer-bottom">
+                  <div class="support-social-media">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script>
+    const repeatElements = document.querySelectorAll(`[id^="repeat"]`)
+    repeatElements.forEach(el => {
+      const parent = el.parentElement
+      const repeat = Number(el.id.split('_')[1])
+      parent.innerHTML = Array.from({ length: repeat }).map(item => el.outerHTML).join('')
+    })
+  </script>
 </body>
 
 </html>

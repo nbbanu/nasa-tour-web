@@ -24,4 +24,61 @@
     font-size: 14px;
     border-radius: 5px;
     border: 0;
+    width: 130px;
+}
+
+.content-parent {
+    /* width: 25%;
+    height: 350px; */
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+.content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 90;
+    /* background: linear-gradient(transparent 0%,#014B6EDB 86%); */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+.content-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+.li-style{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+}
+.a-style{
+  color: #fff;
+  font-family: var(--poppins);
+  font-size: 14px;
+  font-weight: 600px;
+  text-decoration: none;
+  line-height: 26px;
+}
+
+.carousel-btn {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-right {
+  right:0
+}
+.carousel-left {
+  left:0
 }
