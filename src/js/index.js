@@ -1,6 +1,5 @@
 import "../style/components.css";
 import "../style/main.css";
-import "../style/phone.css";
 import "../style/tablet.css";
 
 

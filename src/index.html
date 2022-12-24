@@ -13,9 +13,9 @@
 <body>
   <header>
 
-    <nav class="container" id="nav-bar">
+    <nav id="navbar" class="container">
       <div class="nasa-tour-logo"><a href="#"><img src="images/nasa-tour-logo.png" alt="nasa-tour-logo" class="content-img"></a></div>
-      <div class="nav-bar-list">
+      <div class="navbar-list">
         <ul>
           <li><a href="#">Home Page</a></li>
           <li><a href="#">Regions</a></li>
@@ -25,7 +25,7 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
-      <div class="nav-bar-info">
+      <div class="navbar-info">
         <ul>
           <li><a href="#"><img src="images/logos_whatsapp-icon.png" alt="wp-logo"><span>+90 506 307 8794</span> </a></li>
           <li><a href="#"><img src="images/login-lock.png" alt="login-lock">Login</a></li>
@@ -36,7 +36,7 @@
       </div>
     </nav>
     <div class="header-banner">
-      <div class="search-section container">
+      <div class="search-section">
         <h1>Discover with Nasa Tour</h1>
         <form id="search-form">
           <div class="search-icon"><img src="images/SearchIcon.png" style="width: 26px; height: 26px;" alt=""></div>
@@ -47,11 +47,13 @@
 
     </div>
   </header>
+
+
 <div class="container">
-  <section id="top-activities" >
+  <section id="top-activities">
     <h2>Top Activities we think you would enjoy</h2>
     <div class="top-activities-cards">
-      <div class="top-activities-card" id="repeat_4">
+      <div class="top-activities-card" >
         <div class="top-activities-info content-parent">
           <img src="https://blog.obilet.com/wp-content/uploads/2018/10/denizli-pamukkale.jpg" class="content-img"
             alt="top-activities">
@@ -75,10 +77,85 @@
           </div>
         </div>
       </div>
-
-      <!-- <a href="#" class="carousel-btn carousel-left"><img src="images/Component 92.png" alt="solOk"></a>
-        <a href="#" class="carousel-btn carousel-right"><img src="images/Component 93.png" alt="sağOk"></a> -->
+      <div class="top-activities-card" >
+        <div class="top-activities-info content-parent">
+          <img src="https://blog.obilet.com/wp-content/uploads/2018/10/denizli-pamukkale.jpg" class="content-img"
+            alt="top-activities">
+          <div class="top-act-comment">
+            <button class="top-activities-btn btn">ADVENTURE</button>
+            <div class="top-activities-prices">
+              <span class="small">24$</span>
+              <span class="big">20$</span>
+            </div>
+          </div>
+        </div>
+        <h4>Horse Riding at Golden Sandy Beach</h4>
+        <div class="top-activities-subinfo">
+          <div class="hours">
+            <img src="images/time-outline.png" alt="time-outline">
+            <p>1-2 Hours</p>
+          </div>
+          <div class="location">
+            <img src="images/konum.png" alt="location">
+            <p>Antalya</p>
+          </div>
+        </div>
+      </div>
+      <div class="top-activities-card" >
+        <div class="top-activities-info content-parent">
+          <img src="https://blog.obilet.com/wp-content/uploads/2018/10/denizli-pamukkale.jpg" class="content-img"
+            alt="top-activities">
+          <div class="top-act-comment">
+            <button class="top-activities-btn btn">ADVENTURE</button>
+            <div class="top-activities-prices">
+              <span class="small">24$</span>
+              <span class="big">20$</span>
+            </div>
+          </div>
+        </div>
+        <h4>Horse Riding at Golden Sandy Beach</h4>
+        <div class="top-activities-subinfo">
+          <div class="hours">
+            <img src="images/time-outline.png" alt="time-outline">
+            <p>1-2 Hours</p>
+          </div>
+          <div class="location">
+            <img src="images/konum.png" alt="location">
+            <p>Antalya</p>
+          </div>
+        </div>
+      </div>
+      <div class="top-activities-card" >
+        <div class="top-activities-info content-parent">
+          <img src="https://blog.obilet.com/wp-content/uploads/2018/10/denizli-pamukkale.jpg" class="content-img"
+            alt="top-activities">
+          <div class="top-act-comment">
+            <button class="top-activities-btn btn">ADVENTURE</button>
+            <div class="top-activities-prices">
+              <span class="small">24$</span>
+              <span class="big">20$</span>
+            </div>
+          </div>
+        </div>
+        <h4>Horse Riding at Golden Sandy Beach</h4>
+        <div class="top-activities-subinfo">
+          <div class="hours">
+            <img src="images/time-outline.png" alt="time-outline">
+            <p>1-2 Hours</p>
+          </div>
+          <div class="location">
+            <img src="images/konum.png" alt="location">
+            <p>Antalya</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel" style="display: none;" >
+        <a href="#" class="carousel-btn carousel-left"><img src="images/Component 92.png" alt="solOk"></a>
+        <a href="#" class="carousel-btn carousel-right"><img src="images/Component 93.png" alt="sağOk"></a>
     </div>
+      </div>
+      
+      
   </section>
 </div>
 
@@ -111,6 +188,10 @@
           </div>
 
         </div>
+        <div class="carousel" style="display: none;" >
+          <a href="#" class="carousel-btn carousel-left"><img src="images/Component 92.png" alt="solOk"></a>
+          <a href="#" class="carousel-btn carousel-right"><img src="images/Component 93.png" alt="sağOk"></a>
+      </div>
       </div>
       <div class="tours-benefits">
         <div class="tour-benefit" id="repeat_3" >
@@ -122,7 +203,7 @@
             <p>Follow your curiosity, feel the joy of real discoveries, and explore more of the world.</p>
           </div>
         </div>
-        
+
        
       </div>
       <div class="near-tours">
@@ -136,6 +217,10 @@
               <button class="btn near-activities-btn">24 ACTIVITIES</button>
             </div>
           </div>
+          <div class="carousel" style="display: none;" >
+            <a href="#" class="carousel-btn carousel-left"><img src="images/Component 92.png" alt="solOk"></a>
+            <a href="#" class="carousel-btn carousel-right"><img src="images/Component 93.png" alt="sağOk"></a>
+        </div>
         </div>
   </section>
 
@@ -143,7 +228,7 @@
     <div class="most-popular-tours">
       <h2>Most Popular Tours</h2>
       <div class="most-popular-tours-cards">
-        <div class="most-popular-tours-card" id="repeat_6">
+        <div class="most-popular-tours-card" id="repeat_4">
           <div class="most-popular-tours-info">
 
             <img src="https://blog.obilet.com/wp-content/uploads/2018/10/denizli-pamukkale.jpg" alt="top-activities">
@@ -259,8 +344,8 @@
           </div>
           <div class="nasa-tour-footer-success">
             <div class="success-images">
-              <img src="images/success1.png" alt="success1">
-              <img src="images/success2.png" alt="success2">
+              <img src="images/success1.png" alt="success1" class="content-img">
+              <img src="images/success2.png" alt="success2" class="content-img">
             </div>
           </div>
         </div>
@@ -322,6 +407,8 @@
 
     </div>
   </footer>
+
+
 
 
   <script>

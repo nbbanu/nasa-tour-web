@@ -4,7 +4,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
 }
 
 * {
@@ -14,6 +13,7 @@ body {
 
 .container {
   max-width: 1410px;
+
   margin: 0 auto;
 }
 
@@ -50,25 +50,25 @@ nav ul li a {
   color: var(--fonts);
 }
 
-.nav-bar-info img {
+.navbar-info img {
   width: 22px;
   height: 22px;
 }
-.nav-bar-info img:last-child {
+.navbar-info img:last-child {
 display: none;
 }
 
-.nav-bar-info li:nth-child(1) img,
-.nav-bar-info li:nth-child(2) img {
+.navbar-info li:nth-child(1) img,
+.navbar-info li:nth-child(2) img {
   margin-right: 7px;
 }
 
-.nav-bar-info li:nth-child(3) img,
-.nav-bar-info li:nth-child(4) img {
+.navbar-info li:nth-child(3) img,
+.navbar-info li:nth-child(4) img {
   margin-left: 5px;
 }
 
-.nav-bar-info ul li a {
+.navbar-info ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,6 +76,7 @@ display: none;
 
 .header-banner {
   background: url('../images/navbarbg.png') center center no-repeat;
+  background-size: cover;
   width: 100%;
   height: 500px;
 }
@@ -149,6 +150,7 @@ display: none;
   align-items: center;
   margin-bottom: 80px;
   position: relative;
+  width: 100%;
 }
 
 .top-activities-card {
@@ -256,7 +258,7 @@ display: none;
 }
 
 .support-card {
-  width: 33.3%;
+  width: 450px;
   height: 134px;
   display: flex;
   align-items: center;
@@ -719,10 +721,9 @@ display: none;
 /* Footer  */
 #footer {
   background: url(../images/mostPopularToursBG.png) center center no-repeat;
-  background-size: 100% 380px;
+  background-size: 100% 100%;
   background: linear-gradient(180deg, #096996 0%, #06415C 100%);
-  margin-bottom: 41px;
-  padding: 48px;
+  padding: 48px 15px 30px;
   display: flex;
   flex-direction: column;
 }
