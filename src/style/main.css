@@ -453,7 +453,6 @@ display: none;
   flex-shrink: 0;
   background-color: #fff;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.14);
-  margin-right: 30px;
   border-radius: 20px;
 }
 
@@ -597,14 +596,6 @@ display: none;
   height: 240px;
 }
 
-.blog-artist-card {
-  margin-right: 20px;
-}
-
-.blog-artist-card:nth-child(4) {
-  margin-right: 0;
-}
-
 .blog-artist-card-info {
   background: linear-gradient(transparent 0%, #014B6EDB 90%);
 }
@@ -616,23 +607,6 @@ display: none;
   padding-bottom: 20px;
   margin: 0;
 }
-
-
-/* .carousel-btn {
-  position: absolute;
-  z-index: 999;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#blogAndArtist .carousel-right {
-  right:0
-}
-#blogAndArtist .carousel-left {
-  left:0
-} */
-
-
 
 #top-attraction-cat {
   margin-top: 110px;

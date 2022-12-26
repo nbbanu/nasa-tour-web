@@ -68,17 +68,46 @@
   text-decoration: none;
   line-height: 26px;
 }
-
-.carousel-btn {
+.carousel{
+  position: relative;
+  overflow-x: hidden;
+}
+.carousel-inner{
+  display: flex;
+  transition: 1s ease;
+  transform: translateX(0px);
+}
+.carousel-item{
+  margin:0 15px;
+}
+.carousel-btn{
   position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
   z-index: 999;
-  top: 50%;
-  transform: translateY(-50%);
+  border: none;
 }
 
-.carousel-right {
-  right:0;
+.carousel-btn.carousel-left{
+  left: 0;
+  background: linear-gradient(to right, var(--primaryDark), transparent);
 }
-.carousel-left {
-  left:0
+.carousel-btn.carousel-right{
+  right: 0;
+  background: linear-gradient(to left, var(--primaryDark), transparent);
 }
+.carousel-btn i{
+  color: #fff;
+  font-size: 35px;
+}
+.carousel-btn.simple-carousel-left{
+  left: 0;
+}
+.carousel-btn.simple-carousel-right{
+  right: 0;
+}
+
