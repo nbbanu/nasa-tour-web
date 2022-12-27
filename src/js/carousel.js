@@ -17,8 +17,8 @@ nextBtn.addEventListener("click", () => {
         count++;
         carouselInner.style.transform = `translateX(-${count * itemWidth}px)`;
     }
-
 });
+
 prevBtn.addEventListener("click", () => {
     let itemWidth = carouselItem.offsetWidth + 30;
 
@@ -27,3 +27,4 @@ prevBtn.addEventListener("click", () => {
         carouselInner.style.transform = `translateX(-${count * itemWidth}px)`;
     }
 });
+
