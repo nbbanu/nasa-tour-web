@@ -20,6 +20,14 @@ body {
   height: 90px;
 }
 
+.navbar-desktop {
+  justify-content: space-between;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
 .nasa-tour-logo {
   justify-content: center;
 }
@@ -30,19 +38,24 @@ body {
   height: 55px;
 }
 
-nav ul {
+.navbar-menu li:not(.sidemenu li) {
+  margin-right: 40px;
+}
+
+nav ul:not(.sidemenu ul)  {
   justify-content: center;
   list-style-type: none;
   font-weight: 700;
   font-size: 16px;
+  padding: 0;
 }
 
-nav ul li {
-  margin-left: 20px;
+.navbar-info li {
+  margin-right: 15px;
   cursor: pointer;
 }
 
-nav ul li a {
+nav ul li a:not(.sidemenu a) {
   text-decoration: none;
   color: var(--fonts);
 }
@@ -73,6 +86,7 @@ nav ul li a {
   background-size: cover;
   width: 100%;
   height: 500px;
+  margin-bottom: 40px;
 }
 
 .search-section {
@@ -83,13 +97,12 @@ nav ul li a {
 .search-section h1 {
   color: #fff;
   text-align: center;
-
   font-size: 56px;
   font-weight: 900;
 }
 
 #search-form {
-  width: 536px;
+  width: 30%;
 }
 
 #search-form .search-icon img {
@@ -102,6 +115,7 @@ nav ul li a {
 }
 
 #search-form input {
+  outline: 0;
   border: 0;
   border-radius: 30px;
   width: 100%;
@@ -121,7 +135,6 @@ nav ul li a {
   position: absolute;
   top: 6px;
   right: 8px;
-
 }
 
 /* top-activities */
@@ -130,15 +143,11 @@ nav ul li a {
 }
 
 .top-activities-card {
-  min-width: 330px;
+  max-width: 330px;
   min-height: 356px;
   background-color: #fff;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.14);
   border-radius: 20px;
-}
-
-.top-activities-card:last-child {
-  margin-right: 0;
 }
 
 .top-activities-card .top-activities-info {
@@ -321,7 +330,7 @@ nav ul li a {
 }
 
 .near-tour-card {
-  min-width: 330px;
+  max-width: 330px;
   min-height: 350px;
 }
 
@@ -349,8 +358,10 @@ nav ul li a {
 
 /* Most Popular Tours */
 #most-popular-tours {
+  overflow-x: hidden;
   background: url(../images/mostPopularToursBG.png) no-repeat;
   width: 100%;
+  min-height: 972px;
   background-size: 100% 972px;
   margin-bottom: 90px;
 }
@@ -373,7 +384,7 @@ nav ul li a {
   height: 268px;
 }
 
-.most-popular-tours-card .most-popular-tours-info img {
+.most-popular-tours-info img {
   border-radius: 20px;
   width: 100%;
   height: 100%;
@@ -406,12 +417,12 @@ nav ul li a {
   padding-bottom: 20px;
 }
 
-.most-popular-tours-card .popular-tours-prices .small-prices {
+.popular-tours-prices .small-prices {
   font-size: 20px;
   text-decoration: line-through;
 }
 
-.most-popular-tours-card .popular-tours-prices .big-prices {
+.popular-tours-prices .big-prices {
   font-size: 32px;
 }
 
@@ -427,21 +438,21 @@ nav ul li a {
   color: var(--fonts);
 }
 
-.popular-tours-subinfo .hours,
+.hours,
 .location {
   margin-left: 22px;
   font-size: 14px;
   color: var(--fonts);
 }
 
-.popular-tours-subinfo .hours img,
+.hours img,
 .location img {
   margin-right: 10px;
 }
 
 #most-popular-tours .watch-video {
-  width: 60%;
-  height: 552px;
+  max-width: 987px;
+  max-height: 552px;
   justify-content: center;
 }
 
@@ -475,7 +486,7 @@ nav ul li a {
 }
 
 .blog-articles-card {
-  min-width: 330px;
+  max-width: 330px;
   min-height: 240px;
 }
 
@@ -500,6 +511,7 @@ nav ul li a {
   padding-top: 50px;
   margin-bottom: 80px;
 }
+
 .regions-of-tours {
   flex-wrap: wrap;
   margin-bottom: 30px;
@@ -518,7 +530,7 @@ nav ul li a {
   border-bottom-right-radius: 10px;
 }
 
-.region-btn-left{
+.region-btn-left {
   justify-content: center;
   padding: 0 10px;
   color: white;
@@ -527,7 +539,7 @@ nav ul li a {
   background-color: var(--primaryDark);
 }
 
-.region-btn-right{
+.region-btn-right {
   justify-content: center;
   padding: 0 19px;
   height: 100%;
@@ -540,7 +552,7 @@ nav ul li a {
 }
 
 .collabration {
-  min-width: 210px;
+  max-width: 210px;
   min-height: 85px;
   border-radius: 10px;
   padding: 14px 40px;
@@ -566,10 +578,13 @@ nav ul li a {
   align-items: flex-start;
   margin-bottom: 35px;
 }
+
 .footer-top-left .footer-logo {
-  min-width: 234px;
-  min-height: 73px;
+  max-width: 234px;
+  max-height: 73px;
+  margin-bottom: 10px;
 }
+
 .footer-top-left .footer-comment p {
   color: #fff;
   font-family: var(--poppins);
@@ -577,13 +592,13 @@ nav ul li a {
   line-height: 21px;
 }
 
-.footer-top-left .footer-top-left-images{
+.footer-top-left .footer-top-left-images {
   display: flex;
   max-height: 107px;
   max-width: 150px;
 }
 
-.footer-top-left-images  img {
+.footer-top-left-images img {
   margin-right: 22px;
 }
 
@@ -609,8 +624,14 @@ nav ul li a {
   color: #fff;
   margin-right: 10px;
 }
-.none-footer{
+
+.none-footer {
   font-size: 28px;
   justify-content: flex-start;
   margin-right: 24px;
+}
+
+.cards-grid-2,
+.cards-grid-3 {
+  display: flex;
 }

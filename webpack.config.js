@@ -18,6 +18,8 @@ const templateFiles = fs.readdirSync(environment.paths.source)
     output: filename.replace(/\.ejs$/, '.html'),
   }));
 
+  console.log(templateFiles)
+
 const htmlPluginEntries = templateFiles.map((template) => new HTMLWebpackPlugin({
   inject: true,
   hash: false,
