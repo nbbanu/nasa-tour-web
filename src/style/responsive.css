@@ -3,34 +3,37 @@
         max-width: 1280px;
         margin: 0 auto;
     }
+   /* #region MAİNPAGE */
 
-    #support .support-card {
-        width: 30%;
-    }
+#support .support-card {
+    width: 30%;
+}
 
-    .support-card .support-info h3 {
-        font-size: 19px;
-    }
+.support-card .support-info h3 {
+    font-size: 19px;
+}
 
-    .support-card .support-info p {
-        font-size: 12px;
-        padding-top: 5px;
-    }
+.support-card .support-info p {
+    font-size: 12px;
+    padding-top: 5px;
+}
 
-    .blog-articles-cards .blog-articles-card-info p {
-        font-size: 18px;
-        padding-right: 10px;
-    }
-
+.blog-articles-cards .blog-articles-card-info p {
+    font-size: 18px;
+    padding-right: 10px;
+}
+        /* #endregion */
+      /* #region TOURDETAİLS */
+        /* #endregion */
 }
 
 @media screen and (max-width:1280px) {
     .container {
-        max-width: 960px;
+        max-width: 980px;
         margin: 0 auto;
     }
-
-    #navbar .nasa-tour-logo img {
+      /* #region MAİNPAGE */
+      #navbar .nasa-tour-logo img {
         min-width: 120px;
         height: auto;
     }
@@ -166,6 +169,11 @@
         font-size: 12px;
     }
 
+/* #endregion */
+    /* #region TOURDETAİLS */
+
+    
+        /* #endregion */
 }
 
 @media only screen and (max-width:960px) {
