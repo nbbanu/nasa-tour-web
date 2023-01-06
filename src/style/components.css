@@ -139,6 +139,9 @@
     .f-s-32{
       font-size: 32px;
     }
+    .f-s-36{
+      font-size: 36px;
+    }
     /* #endregion */
 
   /* #region HEADERS */
@@ -194,7 +197,7 @@
   .dots{
     border: 1px dashed rgba(207, 207, 207, 1);
     opacity: 0.5;
-    min-width: 250px;
+    min-width: calc(100%);
     margin: 0 auto;
     margin-bottom: 20px;
   }
@@ -442,7 +445,9 @@
   text-decoration: none;
   line-height: 26px;
 }
-
+.link{
+  text-decoration: none;
+}
 .f-poppins{
   font-family: var(--poppins);
 }
@@ -459,10 +464,15 @@
 .l-h-22{
   line-height: 22px;
 }
+.l-h-30{
+  line-height: 30px;
+}
 .l-h-32{
   line-height: 32px;
 }
 .l-h-38{
   line-height: 38px;
 }
-
+.response-visible{
+  display: none;
+}
