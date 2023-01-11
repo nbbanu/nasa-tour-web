@@ -623,9 +623,9 @@ nav ul li a:not(.sidemenu a) {
   justify-content: flex-end;
 }
 
-.footer-bottom .support-social-media i {
-  font-size: 25px;
-  color: #fff;
+.footer-bottom .support-social-media img {
+  width: 15px;
+  height: 26px;
   margin-right: 10px;
 }
 

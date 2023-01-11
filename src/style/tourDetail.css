@@ -211,14 +211,15 @@
     border-radius: 5px;
 }
 
-#booking-form input {
-    padding: 13px 18px;
+#booking-form .main-input {
+    padding: 13px 10px;
     width: inherit;
     border: 0;
     outline: 0;
     flex: 1;
     background-color: #F7F7F7;
 }
+
 
 .booking-form-bottom {
     justify-content: flex-end;
@@ -233,6 +234,45 @@
     border-radius: 30px;
     width: 230px;
     padding: 15px 40px;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    border-radius: 10px;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.14);
+}
+.passengers-dropdown{
+    width: 258px;
+    min-width: 190px;
+    z-index: 999;
+}
+.dropdown ul{
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+}
+.dropdown li:hover{
+    cursor: pointer;
+    background: #f7f7f7;
+}
+.passenger-count .form-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+.dropdown-active{
+    display: flex;
+}
+.passenger-count input{
+    width: 94px;
+    min-height: 35px;
+    border: 1px solid #EEE;
+    border-radius: 10px;
+    outline: 0;
+    padding-left: 20px;
 }
 
 .book-now,
@@ -316,3 +356,8 @@
     margin: 0;
 }
 
+
+
+      /* #region DROPDOWN */
+
+        /* #endregion */

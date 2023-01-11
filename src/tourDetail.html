@@ -46,19 +46,19 @@
 
 
 
-                <div class="sidemenu  flex-column">
+                <div class="sidemenu">
                     <div class="sidemenu-top">
                         <div class="sidemenu-header cards-flex">
                             <div class="side-menu-logo">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Facebook_New_Logo_%282015%29.svg/1280px-Facebook_New_Logo_%282015%29.svg.png"
                                     alt="nasa-tour-logo">
                             </div>
-                            <div class="close-menu cards-flex">
+                            <div class="close-menu center-center">
                                 <img src="images/close.png" alt="close">
                             </div>
                         </div>
                         <div class="sidemenu-navbar">
-                            <div class="sidemenu-navbar-main flex-column">
+                            <div class="sidemenu-navbar-main flex-column-start">
                                 <div class="dots"></div>
                                 <ul>
                                     <li><a href="#">Home Page</a></li>
@@ -71,28 +71,29 @@
                                 <div class="dots"></div>
                                 <div class="side-menu-contact">
                                     <div class="side-btn-top">
-                                        <button class="sidemenu-btn btn-green"><img src="images/logos_whatsapp-icon.png"
+                                        <button class="sidemenu-btn btn-green center-start" ><img src="images/logos_whatsapp-icon.png"
                                                 alt="wp-logo">+90 506 307 8794</button>
-                                        <button class="sidemenu-btn btn-red"><img src="images/lock-white.png"
+                                        <button class="sidemenu-btn btn-secondary center-start"><img src="images/lock-white.png"
                                                 alt="login-lock">Login</button>
                                     </div>
                                     <div class="side-btn-bottom">
-                                        <button class="sidemenu-btn sidemenu-btn-light">English <img
+                                        <button class="sidemenu-btn sidemenu-btn-light cards-flex text-gray f-w-700">English <img
                                                 src="images/eva_arrow-ios-forward-outline.png" alt="arrow"></button>
-                                        <button class="sidemenu-btn sidemenu-btn-light">USD <img
+                                        <button class="sidemenu-btn sidemenu-btn-light cards-flex text-gray f-w-700">USD <img
                                                 src="images/eva_arrow-ios-forward-outline.png" alt="arrow"></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="sidemenu-bottom flex-column">
+                    <div class="sidemenu-bottom column-start-between">
                         <div class="dots"></div>
                         <div class="sidemenu-social-media cards-flex">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-facebook-f"></i>
+                            
+                          <img src="images/facebook.png" alt="">
+                          <img src="images/facebook.png" alt="">
+                          <img src="images/facebook.png" alt="">
+                          <img src="images/facebook.png" alt="">
                         </div>
 
                     </div>
@@ -267,7 +268,7 @@
                             </label>
                             <div class="form-input center-center">
                                 <div class="form-icon center-center"><img src="images/konum.png" alt=""></div>
-                                <input type="search" class="btn btn-light f-s-16 f-w-400 f-poppins" id="search-location"
+                                <input type="search" class="btn btn-light f-s-16 f-w-400 f-poppins main-input" id="search-location"
                                     placeholder="Search for location">
                             </div>
                         </div>
@@ -276,7 +277,7 @@
                                 Date</label>
                             <div class="form-input center-center">
                                 <div class="form-icon center-center"><img src="images/calendar.png" alt=""></div>
-                                <input type="date" class="btn btn-light f-s-16 f-w-400 f-poppins text-gray"
+                                <input type="date" class="btn btn-light f-s-16 f-w-400 f-poppins text-gray main-input"
                                     id="select-date">
                                 <div class="form-icon center-center"><img src="images/eva_arrow-ios-forward-outline.png"
                                         alt=""></div>
@@ -288,21 +289,55 @@
                                 Time</label>
                             <div class="form-input center-center">
                                 <div class="form-icon center-center"><img src="images/calendar.png" alt=""></div>
-                                <input type="time" class="btn btn-light f-s-16 f-w-400 f-poppins text-gray"
+                                <input type="time" class="btn btn-light f-s-16 f-w-400 f-poppins text-gray main-input"
                                     id="select-time">
                                 <div class="form-icon center-center"><img src="images/eva_arrow-ios-forward-outline.png"
                                         alt=""></div>
                             </div>
                         </div>
                         <div class="passengers flex-column-start">
-                            <label for="passengers" class="tour-header-light f-s-18 f-w-700">Passengers</label>
-                            <div class="form-input center-center">
-                                <div class="form-icon center-center"><img src="images/calendar.png" alt=""></div>
-                                <input type="number" class="btn btn-light f-s-16 f-w-400 f-poppins text-gray"
-                                    id="passengers" placeholder="2 Passengers">
-                                <div class="form-icon center-center"><img src="images/eva_arrow-ios-forward-outline.png"
-                                        alt=""></div>
-                            </div>
+                            <label class="tour-header-light f-s-18 f-w-700">Passengers </label> 
+                            <div class="form-input center-center position-rel">  
+                                <div class="form-icon center-center"><img src="images/users.png" alt=""></div>
+                                <input type="text" class="btn btn-light f-s-16 f-w-400 f-poppins text-gray main-input" id="passengers"><span class="f-poppins f-w-400 f-s-16 main-text">2 Passengers</span> 
+                                <div class="form-icon center-center dd-arrow"><img src="images/eva_arrow-ios-forward-outline.png"
+                                    alt=""></div>
+                                    <div class="dropdown passengers-dropdown">
+
+                                            <ul class="link options">
+                                                <li class="f-poppins f-w-600 text-gray start-between option">
+                                                    <div class="passenger-type column-start-between"><span class="f-poppins f-w-600 f-s-16 option-text">Adult</span> <span class="f-poppins f-s-13 text-lightGray f-w-600">(Age 11-99)</span></div>
+                                                    <div class="passenger-count cards-flex position-rel"><input type="number" placeholder="2" class="f-poppins f-w-400 f-s-16">
+                                                        <div class="form-icon center-center position-abs"><img src="images/eva_arrow-ios-forward-outline.png" class=""
+                                                            alt=""></div>
+                                                    </div>
+                                                 
+                                                </li>
+                                                <div class="dots"></div>
+                                                <li class="f-poppins f-w-600 text-gray start-between option">
+                                                    <div class="passenger-type column-start-between"><span class="f-poppins f-w-600 f-s-16 option-text" >Aduls</span> <span class="f-poppins f-s-13 text-lightGray f-w-600">(Age 11-99)</span></div>
+                                                    <div class="passenger-count cards-flex position-rel"><input type="number" placeholder="2" class="f-poppins f-w-400 f-s-16">
+                                                        <div class="form-icon center-center position-abs"><img src="images/eva_arrow-ios-forward-outline.png" class=""
+                                                            alt=""></div>
+                                                    </div>
+                                                 
+                                                </li>
+                                                <div class="dots"></div>
+                                                <li class="f-poppins f-w-600 text-gray start-between option">
+                                                    <div class="passenger-type column-start-between"><span class="f-poppins f-w-600 f-s-16 option-text">Adultss</span> <span class="f-poppins f-s-13 text-lightGray f-w-600">(Age 11-99)</span></div>
+                                                    <div class="passenger-count cards-flex position-rel"><input type="number" placeholder="2" class="f-poppins f-w-400 f-s-16">
+                                                        <div class="form-icon center-center position-abs"><img src="images/eva_arrow-ios-forward-outline.png" class=""
+                                                            alt=""></div>
+                                                    </div>
+                                                 
+                                                </li>
+                                            </ul>
+                                       
+                                        
+                                    </div>
+                            
+                                </div>
+                           
                         </div>
                     </form>
                     <div class="dots"></div>
@@ -660,10 +695,11 @@
                             <li>
                                 <div class="footer-bottom cards-flex">
                                     <div class="support-social-media resp-none">
-                                        <i class="fa-brands fa-facebook-f"></i>
-                                        <i class="fa-brands fa-facebook-f"></i>
-                                        <i class="fa-brands fa-facebook-f"></i>
-                                        <i class="fa-brands fa-facebook-f"></i>
+                                        <img src="images/facebook.png" alt="">
+                                        <img src="images/facebook.png" alt="">
+                                        <img src="images/facebook.png" alt="">
+                                        <img src="images/facebook.png" alt="">
+                                        
                                     </div>
                                 </div>
                             </li>
@@ -673,10 +709,10 @@
             </div>
             <div style="display: none;" class="footer-bottom none-footer cards-flex">
                 <div class="support-social-media">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-facebook-f"></i>
+                    <img src="images/facebook.png" alt="">
+                    <img src="images/facebook.png" alt="">
+                    <img src="images/facebook.png" alt="">
+                    <img src="images/facebook.png" alt="">
                 </div>
             </div>
         </div>
